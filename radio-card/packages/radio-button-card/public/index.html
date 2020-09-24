@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"
+    />
+
+    <title>Orxe3 Components</title>
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://oski-cdn.s3.amazonaws.com/common/css/fonts/ProximaNova/proxima-nova.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href=" https://components.qa.cnxloyalty.com/theme/css/imports.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.3.0/custom-elements-es5-adapter.js"></script>
+    <style>
+      .active {
+        opacity: 1;
+        max-height: 100px;
+        overflow: visible;
+        width: 70%;
+        font-size: 1.8rem;
+        background-color: white;
+        margin-left: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <orxe-radio-button-card
+      header="On selection, the card shows further details"
+      subheading="How many points would you like to redeem?"
+      label="Use my points"
+      points="You have 10,000 points"
+      selected
+      id="points"
+      value="points"
+      name="redeemedPoints"
+    >
+      <div class="active">
+        <div>
+          <span>choose how many points to apply</span><br />
+          <label for="text">Points Redeemed</label>
+          <input type="text" id="text" value="1,590" />
+        </div>
+        <button id="custom-button">Apply</button>
+        <button id="cancel-button">Cancel</button>
+      </div>
+    </orxe-radio-button-card>
+  </body>
+</html>

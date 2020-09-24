@@ -1,0 +1,12 @@
+:root {
+  --card-background-color: var(--global-bg);
+  --container-border-color: var(--disabled-text);
+  --heading-font-size: var(--headline-font-size);
+  --inputs-font-size: var(--input-font-size);
+  --label-font-weight: var(--font-weight-semi-bold);
+  --label-font-family: var(--caption);
+  --radio-button-size: var(--input-font-size);
+  --radio-border-color: var(--secondary);
+  --radio-background-color: var(--secondary-text);
+  --radio-selected-color: var(--neutral);
+}

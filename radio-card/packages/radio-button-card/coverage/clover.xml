@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1600770756806" clover="3.2.0">
+  <project timestamp="1600770756807" name="All files">
+    <metrics statements="9" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="2" elements="14" coveredelements="11" complexity="0" loc="9" ncloc="9" packages="1" files="2" classes="2"/>
+    <file name="index.ts" path="D:\Tavisca\radio-card\packages\radio-button-card\src\index.ts">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+    </file>
+    <file name="orxe-radio-button-card.ts" path="D:\Tavisca\radio-card\packages\radio-button-card\src\orxe-radio-button-card.ts">
+      <metrics statements="9" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="2"/>
+      <line num="7" count="6" type="stmt"/>
+      <line num="10" count="6" type="stmt"/>
+      <line num="13" count="6" type="stmt"/>
+      <line num="16" count="6" type="stmt"/>
+      <line num="17" count="6" type="stmt"/>
+      <line num="20" count="6" type="stmt"/>
+      <line num="24" count="6" type="stmt"/>
+      <line num="59" count="0" type="stmt"/>
+      <line num="65" count="2" type="stmt"/>
+    </file>
+  </project>
+</coverage>

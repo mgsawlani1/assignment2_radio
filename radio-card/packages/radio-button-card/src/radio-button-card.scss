@@ -1,0 +1,27 @@
+@import './radio-button-card-map.scss';
+
+.card {
+  background-color: var(--container-border-color);
+  width: 50%;
+  height: 400px;
+  margin: 2% auto;
+  .radio-input {
+    background-color: var(--radio-background-color);
+    border-color: var(--radio-border-color);
+    border-radius: 4px;
+    width: 80%;
+    height: 250px;
+    margin: 50px;
+    margin-top: 50px;
+  }
+  p {
+    font-size: var(--heading-font-size);
+  }
+
+  label {
+    height: 20px;
+    font-size: var(--inputs-font-size);
+    font-weight: var(--label-font-weight);
+    font-family: var(--label-font-family);
+  }
+}
