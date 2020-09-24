@@ -49,7 +49,7 @@ describe('orxe-radio-button-card', () => {
     expect(card.optionSelected).toBe(false);
   });
 
-  it('Should call function click ', () => {
+  it('Should call function onChange ', () => {
     const optionSelected = true;
     expect(optionSelected).toBe(true);
   });

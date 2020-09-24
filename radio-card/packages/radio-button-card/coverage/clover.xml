@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1600950262956" clover="3.2.0">
-  <project timestamp="1600950262957" name="All files">
+<coverage generated="1600957978333" clover="3.2.0">
+  <project timestamp="1600957978334" name="All files">
     <metrics statements="11" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1" elements="15" coveredelements="12" complexity="0" loc="11" ncloc="11" packages="1" files="2" classes="2"/>
     <file name="index.ts" path="D:\Tavisca\radio-card\packages\radio-button-card\src\index.ts">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
