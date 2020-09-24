@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.89% </span>
+                <span class="strong">90.91% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/9</span>
+                <span class='fraction'>10/11</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.67% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/3</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.89% </span>
+                <span class="strong">90.91% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/9</span>
+                <span class='fraction'>10/11</span>
             </div>
         
             
@@ -119,44 +119,37 @@
 <a name='L60'></a><a href='#L60'>60</a>
 <a name='L61'></a><a href='#L61'>61</a>
 <a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a>
-<a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a>
-<a name='L67'></a><a href='#L67'>67</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L63'></a><a href='#L63'>63</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -186,7 +179,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { customElement, html, LitElement, property } from 'lit-element';
@@ -194,62 +186,58 @@ import styles from './radio-button-card-css';
 &nbsp;
 @customElement('orxe-radio-button-card')
 export default class OrxeRadioButtonCard extends LitElement {
-  @property({ type: String, attribute: 'radio' })
-  radio = 'On selection the card expands and changing background color';
+  @property({ type: String, attribute: 'header' })
+  header = 'header';
 &nbsp;
-  @property({ type: String, attribute: 'message' })
-  message = 'On selection, the card shows further details';
+  @property({ type: String, attribute: 'subheading' })
+  subheading = 'subheading';
 &nbsp;
-  @property({ type: String })
+  @property({ type: String, attribute: 'label' })
+  label = '';
+&nbsp;
+  @property({ type: String, attribute: 'points' })
+  points = '';
+&nbsp;
+  @property({ type: String, attribute: 'id' })
+  id = 'option1';
+&nbsp;
+  @property({ type: String, attribute: 'name' })
+  name = 'option1';
+&nbsp;
+  @property({ type: String, attribute: 'value' })
+  value = 'option1';
+&nbsp;
+  @property({ type: String, attribute: 'selected' })
   optionSelected = false;
-&nbsp;
-  @property({ type: String })
-  buttonText = 'Apply';
-  cancelButton = 'Cancel';
-&nbsp;
-  constructor() {
-    super();
-  }
 &nbsp;
   render() {
     return html`
-      &lt;div id="radio-container" class="container"&gt;
-        &lt;p&gt;
-          ${this.radio}
-        &lt;/p&gt;
-        &lt;div class="${this.optionSelected ? <span class="branch-0 cbranch-no" title="branch not covered" >'selected' </span>: 'radio-input'}"&gt;
-          &lt;input type="radio" id="option1" name="option1" value="option1" @click=${this.click} /&gt;
-          &lt;label for="option1"&gt;Option1&lt;/label&gt;&lt;br /&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
+      &lt;div class="card"&gt;
+        &lt;p&gt;${this.header}&lt;/p&gt;
+        &lt;div class="radio-input"&gt;
+          &lt;p&gt;${this.subheading}&lt;/p&gt;
+          &lt;p&gt;${this.points}&lt;/p&gt;
+          &lt;input
+            type="radio"
+            id=${this.id}
+            name=${this.name}
+            value=${this.value}
+            @change=${this.onChange}
+          /&gt;
+          &lt;label for="redeemedPoint"&gt;${this.label} &lt;/label&gt;&lt;br /&gt;
 &nbsp;
-      &lt;div class="container1"&gt;
-        &lt;p&gt;${this.message}&lt;/p&gt;
-        &lt;div class="radio-input1"&gt;
-          &lt;p&gt;How many points would you like to redeem?&lt;/p&gt;
-          &lt;p&gt;You have 100,000 points&lt;/p&gt;
-          &lt;input type="radio" id="redeemedPoint" name="redeemedPoint" value="redeemedPoint" /&gt;
-&nbsp;
-          &lt;label for="redeemedPoint"&gt;Use my points &lt;/label&gt;&lt;br /&gt;
-&nbsp;
-          &lt;div class="reveal-if-active"&gt;
-            &lt;div&gt;
-              &lt;span&gt;choose how many points to apply&lt;/span&gt;&lt;br /&gt;
-              &lt;label for="text"&gt;Points Redeemed&lt;/label&gt;
-              &lt;input type="text" id="text" value="1,590" /&gt;
-            &lt;/div&gt;
-            &lt;button id="custom-button"&gt;${this.buttonText}&lt;/button&gt;
-            &lt;button id="cancel-button"&gt;${this.cancelButton}&lt;/button&gt;
-          &lt;/div&gt;
+          ${this.optionSelected
+            ? <span class="branch-0 cbranch-no" title="branch not covered" >html`</span>
+                &lt;slot&gt;&lt;/slot&gt;
+              `
+            : html``}
         &lt;/div&gt;
       &lt;/div&gt;
     `;
   }
-&nbsp;
-<span class="fstat-no" title="function not covered" >  cl</span>ick(): void {
+<span class="fstat-no" title="function not covered" >  on</span>Change() {
 <span class="cstat-no" title="statement not covered" >    this.optionSelected = true;</span>
   }
-&nbsp;
   /**
    *  Getting styles from components custom scss file
    */
@@ -262,7 +250,7 @@ export default class OrxeRadioButtonCard extends LitElement {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Sep 22 2020 16:02:36 GMT+0530 (India Standard Time)
+                at Thu Sep 24 2020 17:54:22 GMT+0530 (India Standard Time)
             </div>
         </div>
         <script src="prettify.js"></script>

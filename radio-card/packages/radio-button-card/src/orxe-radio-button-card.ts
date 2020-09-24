@@ -4,10 +4,10 @@ import styles from './radio-button-card-css';
 @customElement('orxe-radio-button-card')
 export default class OrxeRadioButtonCard extends LitElement {
   @property({ type: String, attribute: 'header' })
-  header = '';
+  header = 'header';
 
   @property({ type: String, attribute: 'subheading' })
-  subheading = '';
+  subheading = 'subheading';
 
   @property({ type: String, attribute: 'label' })
   label = '';
@@ -25,7 +25,7 @@ export default class OrxeRadioButtonCard extends LitElement {
   value = 'option1';
 
   @property({ type: String, attribute: 'selected' })
-  optionSelected = true;
+  optionSelected = false;
 
   render() {
     return html`

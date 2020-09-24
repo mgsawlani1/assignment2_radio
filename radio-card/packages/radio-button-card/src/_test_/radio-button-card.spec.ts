@@ -33,14 +33,9 @@ describe('orxe-radio-button-card', () => {
   };
 
   it('should check default value for properties for card', () => {
-    expect(card.message).toEqual('On selection, the card shows further details');
-    expect(card.radio).toEqual('On selection the card expands and changing background color');
+    expect(card.header).toEqual('header');
+    expect(card.subheading).toEqual('subheading');
     expect(card.optionSelected).toEqual(false);
-  });
-
-  it('Should check radio and get attribute', async () => {
-    const radioContainer = getByTestId('radio-container');
-    expect(radioContainer).toHaveAttribute('class', 'container');
   });
 
   it('Changes the value based on the radio buttons', () => {
@@ -50,13 +45,12 @@ describe('orxe-radio-button-card', () => {
     expect(radio1).toBe('option2');
   });
 
+  it('Should check default value of selectedOption ', () => {
+    expect(card.optionSelected).toBe(false);
+  });
+
   it('Should call function click ', () => {
     const optionSelected = true;
     expect(optionSelected).toBe(true);
-  });
-
-  it('Should call function selectedOption ', () => {
-    const optionSelected = false;
-    expect(card.optionSelected).toBe(false);
   });
 });
